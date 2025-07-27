@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content = "width=device-width, initial-scale-1.0"/>
+    <title>Echoes of the Lighthouse</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="game">
+        <h1>Echoes of the Lighthouse</h1>
+        <div id="dayDisplay">Day 1</div>
+        <div id="logContainer">
+            <textarea id="playerInput" placeholder="What did you observe today?..."></textarea>
+            <button onclick="submitLog()">Submit Log</button>
+        </div>
+        <div id="responseArea"></div>
+        <div id="stats">
+            <p><strong>Madness:</strong> <span id="madness">0</span></p>
+            <p><strong>Paranoia:</strong> <span id="paranoia">0</span></p>
+        </div>
+    </div>
+    <audio id="typingSound" src="placeholder.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
