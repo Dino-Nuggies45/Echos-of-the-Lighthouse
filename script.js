@@ -280,6 +280,115 @@ const keywords = {
     paranoia: 2
     },
 
+    void: {
+    response: "You stare into the void that has opened beneath the lighthouse floor. It is endless, a yawning blackness that swallows sound and hope alike. You feel yourself drawn closer, the edges of your vision fraying like worn fabric.",
+    madness: 4,
+    paranoia: 3
+    },
+
+    fracture: {
+    response: "Cracks spiderweb across the walls and floorboards, spreading with unnatural speed. They pulse and shimmer as if alive, threatening to split the lighthouse, and your mind, apart with every heartbeat.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    shadows: {
+    response: "The shadows gather unnaturally thick around you, seeping into corners and wrapping around your limbs. They whisper promises you dare not understand, pulling you further into their cold embrace.",
+    madness: 4,
+    paranoia: 4
+    },
+
+    silence: {
+    response: "An oppressive silence has fallen, so complete it feels suffocating. No wind, no sea, no creaking wood, just a stillness that presses on your chest, hollowing you from the inside out.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    fractured: {
+    response: "Your thoughts are broken, scattered like shards of glass in the dark. You struggle to piece them together, but each fragment slips further away, leaving only confusion and despair in its place.",
+    madness: 5,
+    paranoia: 3
+    },
+
+    whirl: {
+    response: "The room spins without warning, a violent whirl of colors and sounds that drown out reality. You clutch at the walls, but the spinning doesn’t stop. You are trapped inside the storm of your own unraveling mind.",
+    madness: 4,
+    paranoia: 2
+    },
+
+    lost: {
+    response: "You wander the lighthouse endlessly, the halls stretching and twisting into impossible shapes. Every door leads to nowhere, every step circles back to where you started. You are lost, and it is a place with no escape.",
+    madness: 4,
+    paranoia: 3
+    },
+
+    crack: {
+    response: "A sharp crack sounds, like glass breaking inside your head. The pain radiates, fracturing your thoughts and blurring the line between what is real and what is nightmare.",
+    madness: 5,
+    paranoia: 2
+    },
+
+    flicker: {
+    response: "The lights flicker violently, plunging you into darkness then blinding glare. Between flashes, you glimpse shapes moving too fast to see clearly, and hear faint, mocking laughter echoing through the halls.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    voidance: {
+    response: "You feel yourself slipping away, as if being pulled into a void beyond comprehension. Time fractures, memories unravel, and you become less than a shadow, an absence where a person once stood.",
+    madness: 5,
+    paranoia: 4
+    },
+
+    chill: {
+    response: "A relentless cold seeps into your bones, numbing your senses and slowing your heartbeat. The warmth you crave fades further with each passing moment, swallowed by the endless chill of the lighthouse.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    whisper: {
+    response: "Soft whispers crawl beneath your skin, words you cannot understand but feel threaten your very soul. They promise release, but only through surrender to the abyss.",
+    madness: 4,
+    paranoia: 4
+    },
+
+    night: {
+    response: "The sun has not risen for days. The endless night wraps you in shadows so thick they feel alive, breathing, waiting for your last flicker of hope to extinguish.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    shatter: {
+    response: "Your world fractures like glass smashing to the floor. Reality splinters into jagged shards that pierce your mind, cutting away at the edges of your very being.",
+    madness: 5,
+    paranoia: 4
+    },
+
+    return: {
+    response: "You feel the final threshold closing behind you, a point of no return. The path back fades into shadow and memory, leaving only the cold certainty that you are forever lost.",
+    madness: 5,
+    paranoia: 5
+    },
+
+    hollow: {
+    response: "An emptiness grows inside you, hollow and vast, devouring warmth, memory, and hope alike. It is a black hole that expands with every breath, pulling you deeper into despair.",
+    madness: 4,
+    paranoia: 3
+    },
+
+    fading: {
+    response: "The light flickers and wanes, growing dimmer with each passing moment. You grasp at its failing glow, knowing it won’t be long before darkness swallows you whole.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    shiver: {
+    response: "A shiver runs down your spine, unbidden and icy cold. It spreads through your limbs like frost, rooting you in place as shadows lengthen and your breath turns to mist.",
+    madness: 4,
+    paranoia: 2
+    },
+
+
 };
 
 const glitchDays = [3, 6, 10];
