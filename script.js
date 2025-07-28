@@ -97,6 +97,156 @@ const keywords = {
         paranoia: 3
     },
 
+    ash: {
+    response: "Ash gathers in corners of the tower, though nothing has burned. It swirls in ghostly flurries when you breathe too deep, as if remembering a fire no one survived.",
+    madness: 2,
+    paranoia: 1
+    },
+
+    coil: {
+    response: "Something coils in your chest, slow and serpentine. A thought, perhaps. Or a memory you were never supposed to keep.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    blink: {
+    response: "You blink, and the lamp is lit. You blink again, and it isn't. Your eyes betray you, or time does, which is worse?",
+    madness: 2,
+    paranoia: 2
+    },
+
+    scar: {
+    response: "A scar splits the floorboards where lightning once struck, but you’ve never seen a storm. Some wounds mark the world forever, even if you never saw them form.",
+    madness: 1,
+    paranoia: 2
+    },
+
+    latch: {
+    response: "The latch clicks shut on its own, softly. No wind blew it. No hand reached out. You sit still for hours, listening for the next sound.",
+    madness: 2,
+    paranoia: 3
+    },
+
+    wilt: {
+    response: "The flowers on the windowsill wilt, one petal at a time, though you water them daily. They turn away from the light as if it scalds them.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    hum: {
+    response: "A low hum weaves through the walls, mechanical, biological, unplaceable. It’s in your ears, your teeth, the marrow of your bones.",
+    madness: 2,
+    paranoia: 3
+    },
+
+    grit: {
+    response: "Grit crunches beneath your boots, salt, sand, bone. You don’t remember tracking anything in. You don’t remember leaving, either.",
+    madness: 1,
+    paranoia: 2
+    },
+
+    pit: {
+    response: "There’s a pit beneath the floorboards, metaphorical, maybe. But when you step too close, your heart stumbles into it like it knows what’s waiting.",
+    madness: 2,
+    paranoia: 2
+    },
+
+    peel: {
+    response: "Paint peels off the walls in curls, revealing older layers beneath, sigils, names, warnings in a language you almost understand.",
+    madness: 3,
+    paranoia: 2
+    },
+    window: {
+    response: "You glance at the window, but the view seems blurred, as if the glass is bending reality itself. Shapes move beyond the glass, just out of reach.",
+    madness: 2,
+    paranoia: 2
+    },
+
+    door: {
+    response: "The door creaks open by itself, revealing nothing but empty darkness beyond. You feel cold breath brush past your neck.",
+    madness: 2,
+    paranoia: 3
+    },
+
+    floor: {
+    response: "The floorboards groan under unseen weight. A chill runs up your spine as you realize the sound isn’t coming from your steps.",
+    madness: 2,
+    paranoia: 2
+    },
+
+    light: {
+    response: "The light flickers erratically, casting strange shadows that seem to crawl and twist against the walls like living things.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    clock: {
+    response: "The clock ticks backwards, each second dragging longer, pulling time into a slow unraveling you cannot escape.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    chair: {
+    response: "The chair rocks slowly in the empty room, as if someone just stood u,or never left.",
+    madness: 2,
+    paranoia: 1
+    },
+
+    bed: {
+    response: "Your bed is unmade, though you don’t remember leaving it. The sheets twitch like something restless beneath them.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    table: {
+    response: "The table is set for a meal you don’t remember preparing. The plates hold nothing but shadow and silence.",
+    madness: 2,
+    paranoia: 2
+    },
+
+    stairs: {
+    response: "You hear footsteps on the stairs, slow and deliberate, but when you look, no one is there.",
+    madness: 2,
+    paranoia: 3
+    },
+
+    paper: {
+    response: "A crumpled piece of paper lies on the floor, covered in writing you can’t quite read, the ink smudging like tears.",
+    madness: 3,
+    paranoia: 2
+    },
+
+    water: {
+    response: "Water drips steadily from the ceiling, each drop echoing through the silent tower like a ticking clock counting down.",
+    madness: 2,
+    paranoia: 1
+    },
+
+    wind: {
+    response: "The wind howls through the cracks, whispering secrets you’re sure you shouldn’t hear.",
+    madness: 2,
+    paranoia: 3
+    },
+
+    doorway: {
+    response: "The doorway looms dark and empty, a threshold to somewhere you don’t want to step but can’t turn away from.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    footsteps: {
+    response: "Footsteps echo behind you, quickening, then stopping when you spin around. No one is there, but the sound lingers.",
+    madness: 3,
+    paranoia: 4
+    },
+
+    voice: {
+    response: "A voice calls your name softly from the darkness, coaxing and familiar, but you know it is not your own.",
+    madness: 3,
+    paranoia: 4
+    },
+
+
    //Words that lead to decent or good endings
     darkness: {
     response: "The lantern flickers once, twice... then surrenders. The darkness that follows is not simply the absence of light, it pulses. It shifts. It presses against your chest like weightless water, and you feel something watching, not with eyes, but with presence.",
@@ -386,6 +536,60 @@ const keywords = {
     response: "A shiver runs down your spine, unbidden and icy cold. It spreads through your limbs like frost, rooting you in place as shadows lengthen and your breath turns to mist.",
     madness: 4,
     paranoia: 2
+    },
+    
+    gasp: {
+    response: "You catch a sudden gasp escaping your lips, though no air seems to enter your lungs. The room tightens around you, suffocating with every silent inhale.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    veil: {
+    response: "A thin veil of mist curls at the edges of your vision, blurring the line between reality and nightmare. Shapes flicker just beyond reach, always disappearing when you try to focus.",
+    madness: 3,
+    paranoia: 4
+    },
+
+    bleed: {
+    response: "You feel a cold wetness spreading, but no wound is visible. The invisible bleed seeps into your thoughts, staining them with despair and fear.",
+    madness: 5,
+    paranoia: 3
+    },
+
+    crawl: {
+    response: "Something unseen crawls beneath your skin, writhing and twisting, making your flesh tingle with dread and anticipation of something terrible.",
+    madness: 4,
+    paranoia: 4
+    },
+
+    voided: {
+    response: "You sense a void opening inside you, swallowing memories and emotions until only hollow emptiness remains, echoing with distant, forgotten voices.",
+    madness: 5,
+    paranoia: 4
+    },
+
+    fract: {
+    response: "Reality seems to fract, splintering like glass shattered by unseen hands. You stagger through broken reflections of the world and yourself.",
+    madness: 5,
+    paranoia: 3
+    },
+
+    lurk: {
+    response: "Shadows lurk just beyond sight, waiting patiently. You feel their eyes upon you, cold and merciless, promising a fate worse than loneliness.",
+    madness: 4,
+    paranoia: 4
+    },
+
+    shame: {
+    response: "A heavy shame settles over you, thick and suffocating, binding your thoughts and stealing your will to fight against the encroaching darkness.",
+    madness: 3,
+    paranoia: 3
+    },
+
+    voiding: {
+    response: "Everything you know and hold dear begins voiding out of existence, slipping from your grasp like smoke through desperate fingers.",
+    madness: 5,
+    paranoia: 5
     },
 
 
