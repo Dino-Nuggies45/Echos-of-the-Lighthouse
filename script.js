@@ -245,6 +245,83 @@ const keywords = {
     madness: 3,
     paranoia: 4
     },
+    stalk: {
+    response: "You feel eyes on you, moving just beyond sight. Something stalks your every step, silent and patient, waiting for the moment you lower your guard.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  shadowed: {
+    response: "The edges of the room grow shadowed, deepening into shapes that twist and shift. You catch movements out of the corner of your eye, but when you look directly, nothing is there.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  lurking: {
+    response: "A presence lingers just beyond the glow of your lantern. It waits in the dark spaces where your vision fails, breathing softly, as if it knows your fears better than you do.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  hidden: {
+    response: "Something is hidden in plain sight, an indistinct shape that refuses to reveal itself fully. You know it watches, unseen yet unbearably close, waiting for the perfect moment to emerge.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  glimpse: {
+    response: "You catch a fleeting glimpse of movement, too quick, too silent to be real. It haunts your vision, a shadow slipping through the cracks of reality, always just out of reach.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  trailing: {
+    response: "You sense footsteps behind you, slow and deliberate. They follow your path without sound, leaving no trace but the cold brush of breath on your neck, though when you turn, no one is there.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  overhear: {
+    response: "Faint voices drift through the walls, whispering secrets you are not meant to hear. You strain to catch words, but the sentences twist and distort, leaving only a sense of unease.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  vanish: {
+    response: "Things vanish when you look away, objects, shadows, even sounds. The world around you feels unstable, as if reality itself erodes when not observed, leaving only emptiness.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  skulking: {
+    response: "A figure skulks just beyond the reach of the light, skulking through the darkness with purpose. You feel their eyes burning into your back, cold and merciless, but when you spin, there’s nothing but silence.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  silence: {
+    response: "An unnatural silence fills the air, thick and suffocating. Every sound you make echoes hollowly, as if swallowed by an invisible force pressing down on your chest.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  breach: {
+    response: "Something has breached your sanctuary, an unseen violation that sets your nerves on edge. The air shivers with tension, and you wonder if the walls themselves have been crossed by something unknowable.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  masked: {
+    response: "Behind the mask, eyes gleam with unreadable intent. The smile that hides beneath is a secret you dread to uncover, a silent promise of danger lurking just beneath calm surfaces.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  tracing: {
+    response: "You feel a faint tracing against your skin, like cold fingers brushing lightly, leaving trails of unease in their wake. The sensation lingers long after the contact should have ended.",
+    madness: 2,
+    paranoia: 3
+  },
 
 
    //Words that lead to decent or good endings
@@ -398,6 +475,60 @@ const keywords = {
     madness: 3,
     paranoia: 2
     },
+    hollow: {
+    response: "An emptiness echoes within, hollow and vast, as if something vital has been drained away, leaving only a cavernous void where hope once lived.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  decay: {
+    response: "The scent of decay hangs heavy in the air, thick and clinging. Walls crumble softly as if the very structure is rotting from inside, time eating away all certainty.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  rot: {
+    response: "Rot creeps beneath the surface, unseen yet undeniable. It spreads quietly, invading everything pure with a slow, relentless corruption that whispers of inevitable ruin.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  suffocate: {
+    response: "The air grows thick, pressing against your lungs like a heavy, invisible hand. Every breath fights to reach you, but the walls close in, suffocating and endless.",
+    madness: 4,
+    paranoia: 4
+  },
+
+  chill: {
+    response: "A relentless chill seeps through your bones, cold and unforgiving. It steals warmth and will alike, leaving you shivering in a place where even shadows seem frozen.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  haze: {
+    response: "A pale haze blurs your vision, softening edges and dulling senses. It drifts and swirls around you like smoke, hiding truths in its gentle but deceptive embrace.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  murky: {
+    response: "The darkness is murky and thick, impossible to see through. It clings like oil, obscuring paths and hiding things better left unseen, twisting your mind with its heaviness.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  drip: {
+    response: "Slow, steady drips echo in the silence, each one a tiny puncture in time. The sound grows oppressive, a relentless reminder of unseen water pooling somewhere unseen and unknown.",
+    madness: 2,
+    paranoia: 2
+  },
+
+  crawl: {
+    response: "Something crawls just beneath your skin, writhing in the dark places you dare not touch. Its slow movements stir deep dread and the sick thrill of inevitable invasion.",
+    madness: 4,
+    paranoia: 4
+  },
+  
     
     //Words that lead to bad endings
     empty: {
