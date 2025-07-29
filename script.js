@@ -251,6 +251,77 @@ const keywords = {
     paranoia: 4
   },
 
+  static: {
+    response: "A faint hiss creeps into the room, like whispers through a broken radio. The noise burrows under your skin, senseless yet urgent, as though trying to say your name in pieces.",
+    madness: 2,
+    paranoia: 1
+  },
+  scrape: {
+    response: "Something sharp rakes against the outer wall,slow and deliberate. Not the wind. Not claws. Metal on metal, like something remembering how to open the door.",
+    madness: 1,
+    paranoia: 2
+  },
+  snare: {
+    response: "A thin wire curls around your thought, a trap not for your body but your mind. You feel it tu,tightening with every doubt, every repetition of ‘what if’.",
+    madness: 2,
+    paranoia: 2
+  },
+  strain: {
+    response: "The silence is taut, stretched like cable about to snap. Every breath feels wrong, too loud, like you're not supposed to be here, like something's holding its breath too.",
+    madness: 1,
+    paranoia: 2
+  },
+  displace: {
+    response: "Something shifted. Not the furniture, not the ligh,but you. A misalignment in your reflection, a fractional delay in your thoughts. You are present, but not in the right place.",
+    madness: 2,
+    paranoia: 2
+  },
+  rupture: {
+    response: "A rift open,not physical, but perceptual. What once made sense fractures at the seams. You see things you shouldn’t: a double shadow, a second ticking hand, a scream behind your smile.",
+    madness: 3,
+    paranoia: 2
+  },
+  contort: {
+    response: "Your vision bends like melted glass. Shapes lurch into impossible angles. Something is flexing around you, reshaping reality to fit a different truth.",
+    madness: 2,
+    paranoia: 2
+  },
+  loop: {
+    response: "You hear the door shut again. And again. And again. The sound is identical each time, a perfect replica. You haven’t moved. Or maybe you have.",
+    madness: 2,
+    paranoia: 3
+  },
+  interfere: {
+    response: "A sharp interruption buzzes through your thoughts. Like someone tapping on the inside of your skull. The signal is clea,this isn’t yours. You’re being rewritten.",
+    madness: 3,
+    paranoia: 1
+  },
+  unseen: {
+    response: "There’s something behind the mirror. You never saw it, not directl,but the smudges are different now. The air’s heavier. It's not what’s seen that scares you.",
+    madness: 1,
+    paranoia: 3
+  },
+  throb: {
+    response: "A pulsing sound rises in the floorboards. It matches your heartbeat until it doesn’t. Until it runs ahead of you. Until it refuses to stop.",
+    madness: 2,
+    paranoia: 2
+  },
+  unheard: {
+    response: "They spoke again, but this time their lips didn't move. You understood it anyway. The silence was more coherent than their voice ever was.",
+    madness: 2,
+    paranoia: 3
+  },
+  shift: {
+    response: "Everything’s moved slightl,by an inch, maybe less. But it’s enough. The walls don’t remember being built like this. Neither do you.",
+    madness: 2,
+    paranoia: 2
+  },
+  distort: {
+    response: "Your shadow bends in the wrong direction. It stretches longer when you step away from the light. It twitches when you don’t.",
+    madness: 2,
+    paranoia: 3
+  },
+
   shadowed: {
     response: "The edges of the room grow shadowed, deepening into shapes that twist and shift. You catch movements out of the corner of your eye, but when you look directly, nothing is there.",
     madness: 3,
@@ -325,6 +396,108 @@ const keywords = {
 
 
    //Words that lead to decent or good endings
+  scurry: {
+    description: "You hear something darting behind the walls, too fast to catch, too deliberate to ignore.",
+    madness: 2,
+    paranoia: 3
+  },
+  crackle: {
+    description: "Static dances through the silence, like a voice trying to claw its way through noise.",
+    madness: 1,
+    paranoia: 3
+  },
+  sliver: {
+    description: "Just a glimpse, like light through a broken pane, a vision sharp enough to cut.",
+    madness: 2,
+    paranoia: 2
+  },
+  tangle: {
+    description: "The threads of thought knot and twist, impossible to follow back to where you began.",
+    madness: 3,
+    paranoia: 2
+  },
+  warp: {
+    description: "Reality bends like heat over asphalt, and nothing quite returns to its original shape.",
+    madness: 3,
+    paranoia: 3
+  },
+  slink: {
+    description: "You feel it moving just outside your vision, dragging itself forward with quiet intent.",
+    madness: 1,
+    paranoia: 4
+  },
+  gnash: {
+    description: "You hear teeth grinding, not your own, rhythmic and relentless in the dark.",
+    madness: 2,
+    paranoia: 3
+  },
+  dim: {
+    description: "The light doesn’t fade, it’s smothered, swallowed by something unseen but present.",
+    madness: 1,
+    paranoia: 2
+  },
+  peering: {
+    description: "You feel the weight of unseen eyes, watching from cracks in the world.",
+    madness: 1,
+    paranoia: 4
+  },
+  snip: {
+    description: "A sudden cut in the hum of thought, like something vital has been severed.",
+    madness: 2,
+    paranoia: 2
+  },
+  croon: {
+    description: "A voice hums low in the air, gentle yet alien, as if to lull you into sleep or ruin.",
+    madness: 3,
+    paranoia: 2
+  },
+  blur: {
+    description: "Edges smear, colors run, the world grows unsteady beneath your gaze.",
+    madness: 2,
+    paranoia: 2
+  },
+  spasm: {
+    description: "Your body jerks against your will, like something else is trying it on.",
+    madness: 3,
+    paranoia: 2
+  },
+  scrag: {
+    description: "The shape is wrong, the limbs too thin, too long, it moves like broken glass.",
+    madness: 3,
+    paranoia: 3
+  },
+  sputter: {
+    description: "The light fights to stay alive, coughing sparks before it chokes out entirely.",
+    madness: 1,
+    paranoia: 2
+  },
+  grind: {
+    description: "You feel the sound in your teeth, low and steady, something being ground down to dust.",
+    madness: 2,
+    paranoia: 3
+  },
+  scruff: {
+    description: "The feeling of something brushing the back of your neck, not quite a touch, not quite air.",
+    madness: 1,
+    paranoia: 4
+  },
+  tilt: {
+    description: "The room slants, your perspective shifts, as if gravity briefly forgot your presence.",
+    madness: 3,
+    paranoia: 2
+  },
+  jerk: {
+    description: "A sudden twitch, yours or theirs, either way, it’s the wrong time to move.",
+    madness: 2,
+    paranoia: 2
+  },
+  droop: {
+    description: "Things begin to sag, wilt, melt, your limbs, your thoughts, your will to resist.",
+    madness: 3,
+    paranoia: 1
+  },
+
+
     darkness: {
     response: "The lantern flickers once, twice... then surrenders. The darkness that follows is not simply the absence of light, it pulses. It shifts. It presses against your chest like weightless water, and you feel something watching, not with eyes, but with presence.",
     madness: 2,
