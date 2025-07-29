@@ -528,6 +528,41 @@ const keywords = {
     madness: 4,
     paranoia: 4
   },
+  seep: {
+    response: "A dark liquid seeps slowly through cracks and crevices, staining everything it touches. It smells of forgotten memories and whispered fears, soaking into the foundation of your reality.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  crevice: {
+    response: "A narrow crevice yawns before you, dark and unknowable. You feel the pull of its depths, as if it calls to something buried deep within, waiting for release.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  frostbite: {
+    response: "A biting frost creeps across your skin, numb and merciless. The cold steals feeling, hardening flesh and spirit alike until all that remains is brittle and breaking.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  hollowed: {
+    response: "The hollowed remains of what once was are all that linger now, empty shells haunted by echoes of life, silent witnesses to the slow unraveling of all you know.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  gloom: {
+    response: "A heavy gloom settles like a suffocating blanket, darkening every corner and filling your heart with a weight too vast to carry alone.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  suffuse: {
+    response: "A cold, creeping light suffuses the air, washing over you with a spectral glow that blurs the line between reality and nightmare.",
+    madness: 3,
+    paranoia: 3
+  },
   
     
     //Words that lead to bad endings
@@ -722,8 +757,91 @@ const keywords = {
     madness: 5,
     paranoia: 5
     },
-
-
+    watching: {
+    response: "You feel it again, that impossible sensation, not eyes, but presence, hovering just beyond the edges of reason. Your spine tenses, not from touch, but from the unshakable certainty of being observed.",
+    madness: 2,
+    paranoia: 3
+  },
+  mismatch: {
+    response: "Something isn’t aligning. The lighthouse door was green, it has always been green, so why is it red now? Your thoughts tangle. Was it ever green at all?",
+    madness: 2,
+    paranoia: 2
+  },
+  misheard: {
+    response: "You could have sworn it said ‘Leave,’ not ‘Breathe.’ The whisper returned, clearer this time, or was it? Every word echoes into something unfamiliar and wrong.",
+    madness: 1,
+    paranoia: 3
+  },
+  twitch: {
+    response: "A twitch in your peripheral vision. Quick, jagged. Not your own, something beyond the glass. You freeze, but it doesn't stop. It never does.",
+    madness: 1,
+    paranoia: 3
+  },
+  counterfeit: {
+    response: "It looks like your journal, every page identical, but the ink bleeds thoughts you've never written. Your name is wrong. Your dreams described. Who made this copy?",
+    madness: 3,
+    paranoia: 2
+  },
+  jolt: {
+    response: "A jolt stabs through the floorboards like a static nerve. Not thunder. Not a quake. It came from below. From beneath. As if something had breathed.",
+    madness: 1,
+    paranoia: 3
+  },
+  blinking: {
+    response: "Each blink becomes an interruption, like a skipped reel in a film. The world stutters. Your hands shift slightly in place. A picture frame turns askew. Did you miss a second, or a century?",
+    madness: 2,
+    paranoia: 2
+  },
+  falsehood: {
+    response: "You open the logbook and realize every entry is a lie, dates that haven’t passed, events that didn’t happen, signed by a hand that mimics yours perfectly.",
+    madness: 2,
+    paranoia: 2
+  },
+  glitch: {
+    response: "The room skips. You see it skip, like a flickering tape. Your reflection lags behind your movement, frozen in a grimace you don’t remember making.",
+    madness: 3,
+    paranoia: 3
+  },
+  replay: {
+    response: "You hear the same creak. Exactly the same. It loops. The kettle whistles again, down to the pitch and timing. Time has become a scratched record.",
+    madness: 2,
+    paranoia: 3
+  },
+  dissolve: {
+    response: "The edges of your world soften like wet paper. The lighthouse walls ripple. Your hands blur at the fingertips. Your body is dissolving into the story it’s trapped inside.",
+    madness: 3,
+    paranoia: 2
+  },
+  splintering: {
+    response: "A thought splinters in your mind, not breaks, not fades, but splinters. You can feel the shard twisting deeper, fracturing what once felt whole.",
+    madness: 3,
+    paranoia: 2
+  },
+  fray: {
+    response: "The world is fraying at the seams. Thread by thread, normalcy pulls apart, the lighthouse creaks in places it shouldn't exist, your voice echoes before you speak.",
+    madness: 2,
+    paranoia: 2
+  },
+  inversion: {
+    response: "The sky is wrong. You don’t know how you know that, but you do. The clouds curl beneath the ocean. Birds fly inside-out. Nothing obeys anymore.",
+    madness: 3,
+    paranoia: 3
+  },
+  bend: {
+    response: "The hallway bends. Not turns, bends. Angles soften into curves where there were none. You feel yourself leaning to match it. Bones creak. Reality yields.",
+    madness: 2,
+    paranoia: 2
+  },
+  unravel: {
+    response: "A thread pulls loose from your memory. It tugs another, and another. Names slip. Faces distort. You can't remember who you were this morning. Or last year.",
+    madness: 3,
+    paranoia: 2
+  },
+  implode: {
+    response: "Sound folds in on itself. Your thoughts suck inward like air from a vacuum. The lighthouse groans as if its ribs are collapsing inward. Something inside is giving out.",
+    madness: 3,
+    paranoia: 3
+  },
 };
 
 const glitchDays = [3, 6, 10];
