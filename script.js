@@ -537,6 +537,187 @@ const keywords = {
 
   //Words that lead to decent or good endings
 
+  flicker: {
+    response: ">> VISUAL LOG: Lights faltered for 0.8 seconds. No wind interference. The system registered a presence interrupting the filament, thin, human-sized. It lingered just long enough to be noticed, then retreated into static.",
+    madness: 2,
+    paranoia: 2
+  },
+
+  slammed: {
+    response: ">> IMPACT DETECTED: Forceful collision against eastern bulkhead. No registered storm or physical trigger. Internal door seals briefly disengaged. Something wants in, or something wants out.",
+    madness: 1,
+    paranoia: 4
+  },
+
+  dragging: {
+    response: ">> AUDIO TRACE: Prolonged surface friction, heavy and wet. Object indistinct. Motion pattern resembles a body, limp, unwilling. The sound looped. Once. Twice. Then silence. The floor remembers.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  snapped: {
+    response: ">> FRACTURE POINT LOGGED: Something under pressure gave way. Bone? Rope? Wood? Echoes suggest a short, violent end to tension. The aftermath remains undocumented. But it changed the pressure in the room.",
+    madness: 1,
+    paranoia: 3
+  },
+
+  creaked: {
+    response: ">> SOUND REGISTER: Creaking detected, long, groaning, inconsistent. No wind pattern corresponds. Interior structural stress? Or footsteps. Somewhere above. Somewhere close. The system begins recalibrating but the timestamp does not change.",
+    madness: 1,
+    paranoia: 3
+  },
+
+  thudding: {
+    response: ">> REPETITIVE THUMP: Low, methodical, no identifiable rhythm. The cadence suggested breath. Or intention. It did not match your own heartbeat. Recommend immediate check of lower decks.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  gasped: {
+    response: ">> BREATH ANOMALY: A sharp intake logged, but no matching exhale. The sound originated from directly behind your log terminal. No audio file found in backup. System unable to replicate.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  scraping: {
+    response: ">> SURFACE INTERFERENCE: Scraping recorded along metal hull. Persistent and slow. The pattern resembled claw marks. Or symbols. No origin. It stopped exactly when you noticed.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  vanished: {
+    response: ">> ENTITY STATUS: Missing. Registered presence terminated mid-cycle. Thermal imprint cold. One footprint remains near observation deck, but it points inward. Nothing emerged again.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  twitch: {
+    response: ">> KINETIC GLITCH: Small, rapid movement detected within peripheral field. Frame-by-frame analysis inconclusive. Object may have resembled you. It moved wrong.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  broke: {
+    response: ">> STRUCTURE FAILURE: System integrity compromised. It wasn’t mechanical. It was something in you, or near you, that gave way. A quiet shatter that echoes longer than it should.",
+    madness: 2,
+    paranoia: 2
+  },
+
+  echoed: {
+    response: ">> REVERBERATION LOG: Your voice, or a memory of it, repeated itself four times longer than expected. No chamber would allow that. No one else should have answered.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  rattled: {
+    response: ">> VIBRATION ALERT: Doors and pipes shook with erratic pulses. No tremor recorded. Sound resembled laughter choked in iron. It stopped once you stopped breathing.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  stumbled: {
+    response: ">> STABILITY FAILURE: Recorded imbalance mid-hallway. Your own limbs resisted. It felt like something pulled your ankles half a second off reality. Something wanted to share your body.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  darted: {
+    response: ">> MOTION SPIKE: Blip passed across security feed at unnatural speed. Too small to be human. Too direct to be animal. Replay corrupted. But the light changed afterward.",
+    madness: 1,
+    paranoia: 4
+  },
+
+  crept: {
+    response: ">> MOVEMENT DETECTED: Slow advance, pressure-sensitive tiles engaged one by one. No form visible. The path traced from the lower deck to just behind you. Then it paused.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  slipped: {
+    response: ">> GRAVITY LOSS: One recorded fall, though no obstacle registered. Like something moved the floor just as your step landed. Replay suggests deliberate interference.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  stared: {
+    response: ">> GAZE ANOMALY: Sensors detect eyes on you. Directional readings impossible, 360° surrounding field triggered. Nothing appears in the lens, but something sees you. It’s waiting for a blink.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  heaved: {
+    response: ">> LUNG STRAIN RECORDED: Body movement forced, unnatural. As though air resisted. Like the pressure of the ocean itself tried crawling down your throat. But the walls held.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  twisted: {
+    response: ">> ANGLE DEFORMATION: Recorded body movement does not match known human posture. Spine-like distortion noted, duration 0.6 seconds. Origin unknown. Subject resumed normal behavior. Was it you?",
+    madness: 4,
+    paranoia: 3
+  },
+
+  dripping: {
+    response: ">> LIQUID PRESENT: Drip patterns formed near comms panel. No leaks recorded. Substance not water. Tasted of copper. System cannot locate source, ceiling is dry.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  moaned: {
+    response: ">> AUDIBLE DISTRESS: Low moaning from outside the lighthouse, far too long and steady for human lungs. Direction: oceanward. Matching tone found in shipwreck log #0274.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  cracked: {
+    response: ">> SURFACE FRACTURE: Glass or bone, system unsure. The pressure read sudden, as if something small snapped from within. Or beneath. The echo was strangely tender.",
+    madness: 2,
+    paranoia: 2
+  },
+
+  watched: {
+    response: ">> OBSERVATION FLAG: Prolonged surveillance signal registered. Source unknown. EM field fluctuated with the sense of attention. You were not alone. You may never be again.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  thrashed: {
+    response: ">> VIOLENT MOVEMENT: System captured violent struggle in sleeping quarters. No one entered. Blankets torn. Mattress slashed. Internal error or... possession event? Timestamp looped.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  bent: {
+    response: ">> STRUCTURAL WARP: A frame in the observatory bent inward, against all wind and metal logic. Like the world tried curling in. Reality bent for something that wanted through.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  froze: {
+    response: ">> TEMP DROP: Sudden freeze localized to inner cabin. Breath visible. Clocks slowed. For 6 seconds, nothing moved, not even your thoughts. Like time itself paused to listen.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  dissolved: {
+    response: ">> MATTER LOSS: Object dissolved into air without heat, sound, or trace. It left a faint humming behind, as if still remembering its shape. Memory decay? Or erasure?",
+    madness: 3,
+    paranoia: 2
+  },
+
+  hovered: {
+    response: ">> ANTI-GRAVITY EVENT: Object or entity hovered for 4.7 seconds above observation deck. Not bird. Not drone. No wind displacement. A stillness like held breath surrounded it.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  scratched: {
+    response: ">> DAMAGE DETECTED: Deep scratches carved into entryway overnight. Not tools. Not animal. The marks form a looping spiral. It glows faintly when you stare too long.",
+    madness: 3,
+    paranoia: 4
+  },
+
+
   resurface: {
     response: ">> SYSTEM LOG 447-B: Submerged memories begin rising. Once drowned in static, now gasping at the threshold. Integrity unknown. Origin unclear. Familiar fragments shimmer beneath layers of time. Is it safe to retrieve them, or is this bait?",
     madness: 1,
