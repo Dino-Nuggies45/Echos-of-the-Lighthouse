@@ -393,6 +393,146 @@ const keywords = {
     madness: 2,
     paranoia: 3
   },
+  graze: {
+    response: ">> SYSTEM NOTICE: Superficial contact detected along outer perimeter. No visible wound. Nerve endings report memory of pain. Echo lingers.",
+    madness: 1,
+    paranoia: 2
+  },
+  smudge: {
+    response: ">> SYSTEM VISUAL ERROR: Clarity compromised. A faint distortion blots the edge of perception. Something was there. Something moved.",
+    madness: 2,
+    paranoia: 3
+  },
+  crush: {
+    response: ">> COMPRESSION ALERT: Structure integrity violated. Pressure recorded at unsafe levels. Breath halted. Something is closing in.",
+    madness: 3,
+    paranoia: 2
+  },
+  shard: {
+    response: ">> WARNING: Fracture pattern initiated. Mirror logic fractured. Vision refracted in angles that don’t obey geometry.",
+    madness: 2,
+    paranoia: 2
+  },
+  blinked: {
+    response: ">> TEMPORAL GAP: Visual feed momentarily interrupted. Frame skipped. Inconsistency logged. Was it always there?",
+    madness: 1,
+    paranoia: 3
+  },
+  breathless: {
+    response: ">> LIFE SUPPORT QUERY: Oxygen demand exceeded. No exhale detected. Air feels heavier. Pressure building in chest cavity.",
+    madness: 2,
+    paranoia: 2
+  },
+  shudder: {
+    response: ">> TREMOR DETECTED: External vibrations or internal dread? Structural tremble aligns with unknown presence. Avoid sudden movement.",
+    madness: 2,
+    paranoia: 3
+  },
+  sink: {
+    response: ">> DESCENT INITIATED: Ground no longer stable. Falling slowly but surely into silence. Gravity doubled.",
+    madness: 2,
+    paranoia: 2
+  },
+  glare: {
+    response: ">> LIGHT SIGNATURE SPIKE: Too bright. Too focused. Feels targeted. Feels personal. Optics trembling.",
+    madness: 2,
+    paranoia: 3
+  },
+  skitter: {
+    response: ">> AUDIO FEED: Rapid movements along unseen surfaces. Scattered steps in unnatural rhythms. Multiples confirmed.",
+    madness: 2,
+    paranoia: 4
+  },
+  press: {
+    response: ">> COMPRESSION DETECTED: Something unseen pressing down. Not contact, pressure. The air, the thought, the space around you.",
+    madness: 3,
+    paranoia: 3
+  },
+  peered: {
+    response: ">> LINE OF SIGHT INTERRUPTED: Something is watching through the gaps. It waited. It saw you hesitate.",
+    madness: 3,
+    paranoia: 3
+  },
+  clingy: {
+    response: ">> ENTITY PERSISTENCE: Emotional residue detected. Something refuses to let go. Sticky thoughts. Heavy limbs.",
+    madness: 2,
+    paranoia: 2
+  },
+  grasp: {
+    response: ">> REACHING EVENT: Phantom limb or foreign hand? No source confirmed. Skin memory activated.",
+    madness: 3,
+    paranoia: 2
+  },
+  lurch: {
+    response: ">> BALANCE FAILURE: Movement not initiated by self. Spatial orientation compromised. Something pulled.",
+    madness: 2,
+    paranoia: 3
+  },
+  pinch: {
+    response: ">> MINOR PAIN RECEPTOR TRIGGERED: Sharp touch from unseen source. Numbness follows. Was it a warning?",
+    madness: 1,
+    paranoia: 3
+  },
+  squint: {
+    response: ">> VISION FILTER ENGAGED: Trying to sharpen a blur that shouldn’t be there. Shapes keep moving. They know you noticed.",
+    madness: 2,
+    paranoia: 4
+  },
+  wince: {
+    response: ">> PAIN MEMORY STIMULUS: A reaction without a cause. The body remembers something the mind cannot grasp.",
+    madness: 2,
+    paranoia: 3
+  },
+  tilted: {
+    response: ">> ANGLE DISCREPANCY: Reality slightly off-axis. Perspective leaning where it shouldn’t. Something’s been moved.",
+    madness: 2,
+    paranoia: 3
+  },
+  blot: {
+    response: ">> FILE CORRUPTION DETECTED: Memory erased or overwritten. The record was there. It's gone now.",
+    madness: 3,
+    paranoia: 3
+  },
+  blurred: {
+    response: ">> RESOLUTION FAILURE: Image softens, edges fade. Can’t focus. Can’t define. It’s not the lens. It’s you.",
+    madness: 3,
+    paranoia: 2
+  },
+  mossy: {
+    response: ">> SURFACE ANOMALY: Organic overgrowth in sterile space. Old growth in a place meant to be untouched.",
+    madness: 2,
+    paranoia: 1
+  },
+  clicking: {
+    response: ">> AUDIO ANOMALY: Repetitive clicking. Mechanical? Insectile? No source found. Rhythm irregular. Persists even when ears covered.",
+    madness: 3,
+    paranoia: 4
+  },
+  drone: {
+    response: ">> HUM FREQUENCY DETECTED: Deep resonance vibrating through bone. Not natural. It's thinking. It’s speaking.",
+    madness: 4,
+    paranoia: 2
+  },
+  stiff: {
+    response: ">> MOBILITY COMPROMISED: Limbs resist commands. Not frozen, held. External force suspected.",
+    madness: 2,
+    paranoia: 3
+  },
+  traceable: {
+    response: ">> ACTIVITY LOG: Your movements are no longer private. Path marked. Backtracked. Mapped. You're not alone.",
+    madness: 3,
+    paranoia: 4
+  },
+  slinking: {
+    response: ">> MOTION SIGNATURE: Slow, deliberate. Avoiding light. Intelligence detected. It doesn’t want to be seen, yet.",
+    madness: 2,
+    paranoia: 4
+  },
+  creased: {
+    response: ">> PATTERN DISTORTION: Surface wrinkled like an old photo. Something bent the moment. The wrinkle stays.",
+    madness: 2,
+    paranoia: 2
+  },
 
 
    //Words that lead to decent or good endings
