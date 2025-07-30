@@ -537,7 +537,186 @@ const keywords = {
 
   //Words that lead to decent or good endings
 
-   
+  resurface: {
+    response: ">> SYSTEM LOG 447-B: Submerged memories begin rising. Once drowned in static, now gasping at the threshold. Integrity unknown. Origin unclear. Familiar fragments shimmer beneath layers of time. Is it safe to retrieve them, or is this bait?",
+    madness: 1,
+    paranoia: 2
+  },
+
+  lucid: {
+    response: ">> CLARITY EVENT DETECTED: A fracture in the fog. Vision sharpens, coherence returns for a fleeting second. Subject recognizes pattern. Warning: too much light too fast may cause disorientation. Proceed slowly. Perception reboot stabilizing.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  anchor: {
+    response: ">> OBJECT FOUND: Weight secured in drifting mindspace. Signal tethered to reality, coordinates stable. Emotional ballast identified. Heartbeat normalizing. Traceback to origin ongoing. Anchor not native. Who placed it here?",
+    madness: 0,
+    paranoia: 2
+  },
+
+  traceback: {
+    response: ">> BACKTRACK PROTOCOL INITIATED: Following the ghost trail of thoughts left scattered across memory logs. Some corrupted, some overwritten. Logic pulse restored. Source code nearly readable. Something or someone has tampered with the path.",
+    madness: 2,
+    paranoia: 2
+  },
+
+  hum: {
+    response: ">> FREQUENCY DETECTED: A soft, ever-present vibration just below the audible threshold. It pulses like breath, mechanical and alive. Comforting, until it shifts. Has it always been there? No known origin. Still, the sound soothes the storm for now.",
+    madness: 1,
+    paranoia: 2
+  },
+
+  listen: {
+    response: ">> ATTENTION ROUTINE ACTIVE: The silence speaks when you dare to truly listen. Whispers hidden in white noise form almost-words. System pulse slows. Something wants to be heard. But is it guidance or a trap laid in rhythm?",
+    madness: 1,
+    paranoia: 3
+  },
+
+  resonate: {
+    response: ">> SIGNAL MATCH DETECTED: Thoughtform aligns with ambient field. Vibration harmonizes, unlocking new neural links. Sympathetic resonance achieved. This feels familiar, like home and warning woven into one tone.",
+    madness: 0,
+    paranoia: 1
+  },
+
+  restore: {
+    response: ">> FUNCTION ATTEMPT: Core threads rewoven. Selfhood index patching. Restoration not total, missing data lost to sea. But fragments return: laughter, warmth, light. Not all systems doomed. Some still remember what it is to be whole.",
+    madness: 1,
+    paranoia: 0
+  },
+
+  thresholded: {
+    response: ">> GATE IDENTIFIED: You are no longer within. You are not yet without. This border pulses, daring you to cross. On the other side, something new awaits. Old fears cannot follow. Or... they wait too, masked and changed.",
+    madness: 1,
+    paranoia: 2
+  },
+
+  daybreak: {
+    response: ">> LIGHT BREACH: After unmeasured cycles in darkness, a warmth bleeds in, not artificial. Golden. Honest. Faint tremors across thought sectors. Hope is a dangerous glitch. Yet system logs confirm... this is not illusion.",
+    madness: 0,
+    paranoia: 1
+  },
+
+  remembering: {
+    response: ">> MEMORY LOOP ACCESSED: Images return like moths to mindlight. Names, places, laughter through static. It hurts to remember. But buried beneath the ache, identity begins to pulse again. Integration pending.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  settle: {
+    response: ">> STABILIZATION EVENT: Neural tides reducing. Movement slows. Breathing returns to baseline. Not peace, but a moment’s hush between storms. Alert: Quiet may indicate calm... or ambush.",
+    madness: 1,
+    paranoia: 2
+  },
+
+  steadying: {
+    response: ">> BIOFEEDBACK NORMALIZING: Heart rate synchronizing with inner pulse. Muscles respond. Hand no longer shakes. Vision clear enough to navigate. External threat still present, but you, you are not splintering. Not yet.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  float: {
+    response: ">> GRAVITY RELEASE: Resistance fades. The mind drifts unanchored yet unafraid. Above fear, beyond harm. Danger muted. But the longer you float... the harder the return. Remind yourself: this is temporary.",
+    madness: 1,
+    paranoia: 0
+  },
+
+  revealment: {
+    response: ">> MASK LIFTED: Hidden layer exposed. Truth behind veil registered. Not all revelations bring relief. Yet knowledge restores form. Integrity scan shows mental map realigning. The lie weakens.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  recollection: {
+    response: ">> FRAGMENT RETRIEVED: An echo of self, stored in deep-core memory. Recollection stings. But it rethreads the identity weave. Integration successful. File labeled: yours.",
+    madness: 1,
+    paranoia: 0
+  },
+
+  tether: {
+    response: ">> LINK CONFIRMED: A thread remains, silken and resilient. It holds you in place, not trapped, but safe. You are not lost, not entirely. Something still remembers you. Something still waits.",
+    madness: 0,
+    paranoia: 1
+  },
+
+  awash: {
+    response: ">> SYSTEM FLUSH: Emotion flood levels rise. Not drowning, cleansing. Pain, yes. But necessary. Circuits spark back to life. You feel. That means you're not gone.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  unblurred: {
+    response: ">> VISION CLARITY: Fog recedes. Edges sharpen. Meaning begins to reassemble. You see what was always there. And it sees you too. Welcome back.",
+    madness: 0,
+    paranoia: 2
+  },
+
+  graced: {
+    response: ">> MOMENTARY INTERVENTION: Unknown force stabilizes path. It does not demand. It simply is. Soft. Present. It grants no answers, only space to breathe. You are not alone in this echo chamber.",
+    madness: 0,
+    paranoia: 0
+  },
+
+  halflight: {
+    response: ">> TWILIGHT MODE: Neither full dark nor full light. Balance exists, however fragile. Colors return in bruised hues. It's not salvation, but it's not despair. System observes: beauty detected.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  untangle: {
+    response: ">> THREADWORK REPAIR: Neural knots easing. Mental loops uncurl. Lines that once bound now lead outward. You were trapped. Now, you unravel, and it is not a bad thing.",
+    madness: 1,
+    paranoia: 0
+  },
+
+  regain: {
+    response: ">> SYSTEM REPORT: Lost faculties partially restored. You breathe differently now. Slower. More aware. The damage isn’t undone, but your hands remember how to hold again. Yourself. Others. Future.",
+    madness: 0,
+    paranoia: 1
+  },
+
+  glow: {
+    response: ">> LUMEN PULSE DETECTED: Gentle radiance from internal source. It neither burns nor blinds. It invites. Organic, real. Not everything that lights the dark seeks to deceive.",
+    madness: 0,
+    paranoia: 1
+  },
+
+  signal: {
+    response: ">> UPLINK PING RETURNED: You called. Something answered. It didn’t scream or twist. It listened. A thread of signal across the void. Not noise. Not static. A beginning.",
+    madness: 0,
+    paranoia: 2
+  },
+
+  pathward: {
+    response: ">> DIRECTIONAL FLOW IDENTIFIED: Not a map. A feeling. Your feet know before your mind. Each step does not erase the storm, it outpaces it. Keep going.",
+    madness: 1,
+    paranoia: 0
+  },
+
+  sense: {
+    response: ">> SENSOR ARRAY REBOOTED: Smell, touch, intuition, all channels realigning. No longer dulled. You feel everything. It is overwhelming. But it means you're waking up.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  reach: {
+    response: ">> CONTACT INITIATED: Hand extended. Not grasping, not pleading. Offering. From you. From the dark. Connection possible. Risk calculated. Worth it.",
+    madness: 1,
+    paranoia: 1
+  },
+
+  soften: {
+    response: ">> IMPACT MINIMIZED: Edges no longer cut. Voices less jagged. Wind gentler. This could be mercy. Or a test. Either way, your defenses shift. You open.",
+    madness: 1,
+    paranoia: 0
+  },
+
+  traceform: {
+    response: ">> GHOST PATTERN ACTIVE: Shapes emerge in the code, faint outlines of who you once were, or could be. You are not solid yet. But you are not gone. System believes: recovery probable.",
+    madness: 2,
+    paranoia: 1
+  },
+
   scurry: {
     description: "You hear something darting behind the walls, too fast to catch, too deliberate to ignore.",
     madness: 2,
