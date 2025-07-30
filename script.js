@@ -537,6 +537,187 @@ const keywords = {
 
   //Words that lead to decent or good endings
 
+  sloshed: {
+    response: ">> LIQUID DISTURBANCE: Something shifted below. Not waves. Not wind. The water reacted like it was alive, or listening. Subject's heartbeat elevated.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  lurched: {
+    response: ">> BALANCE FAILURE: Structure rocked on no detectable tremor. Disorientation detected. Subject reported nausea and a sense of being watched from beneath the floor.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  groaned: {
+    response: ">> AUDIO EVENT: Prolonged mechanical groan emitted from unknown quadrant. No wind. No structural strain. Resonance frequency matched previous anomalous vocalizations.",
+    madness: 1,
+    paranoia: 3
+  },
+
+  splintered: {
+    response: ">> FRACTURE REPORT: Wood or bone — uncertain. Sudden sharp snap. No visible damage found. Sensory log noted increase in internal pressure.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  flinched: {
+    response: ">> REFLEX TRIGGER: Subject responded to unseen motion. Reflexive flinch noted. No external cause recorded. Internal log shows spike in ocular dilation.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  plunged: {
+    response: ">> DESCENT LOGGED: Drop occurred. No bottom felt. Time was lost. Subject unsure how long descent lasted or if it even happened at all.",
+    madness: 4,
+    paranoia: 2
+  },
+
+  gritted: {
+    response: ">> DENTAL TENSION: Subject clenched jaw with unnatural force. No stimulus recorded. Auditory log captured faint whispers beneath enamel vibrations.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  scrabbled: {
+    response: ">> PANIC RESPONSE: Fingernails and hands moved across surface erratically. Attempting to escape? Nothing chased. Nothing seen. Something felt.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  silenced: {
+    response: ">> VOID INITIATED: All ambient sound ceased for 14.3 seconds. Eardrums intact. Subject reported screaming internally, though lips did not move.",
+    madness: 4,
+    paranoia: 4
+  },
+
+  trembled: {
+    response: ">> AUTONOMIC RESPONSE: Shaking began without temperature change. Uncontrolled. Not cold. Subject claimed the shaking came from the air around them.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  snuffed: {
+    response: ">> LIGHT SOURCE FAILURE: Flame extinguished. No draft detected. Subject insisted fingers brushing shoulder moments before light vanished.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  tapped: {
+    response: ">> RHYTHMIC PATTERN: Fingertip-like tapping on glass recorded. Morse-like cadence. No response given. It stopped only after subject whispered something back.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  recoiled: {
+    response: ">> REVERSE MOTION: Subject pulled away rapidly. No threat recorded. Object of fear was later described as 'a hole in the shape of nothing.'",
+    madness: 3,
+    paranoia: 4
+  },
+
+  glistened: {
+    response: ">> VISUAL NOTE: Surface appeared wet despite dry readings. Something oily. Reflective. Contained small lights pulsing in sync with observer’s breath.",
+    madness: 2,
+    paranoia: 2
+  },
+
+  clanged: {
+    response: ">> METAL STRIKE: Loud clang with no source. Proximity echo registered within closed room. Vibration felt in chest more than ears.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  strained: {
+    response: ">> MUSCLE TENSION: Neck and shoulder muscles locked. Subject unable to speak during event. Unusual vocal signature detected beneath breath patterns.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  gnawed: {
+    response: ">> CONSUMPTION EVENT: Chewing or gnawing sound from behind wall. Scratches followed. Subject reports wall now thinner. Or breathing.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  shivered: {
+    response: ">> TEMPERATURE STABLE: Shivering not temperature-induced. Subject said ‘the air laughed’ before onset. No sound recorded, but chills persisted for 8 minutes.",
+    madness: 3,
+    paranoia: 2
+  },
+
+  ripped: {
+    response: ">> FABRIC BREACH: Tearing sound from ceiling. No cloth present. Sound resembled fabric being opened. Ceiling intact. Subject felt watched afterward.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  oozed: {
+    response: ">> SEEPAGE DETECTED: Substance leaking from unseen source. Viscosity abnormal. Sample evaporated on contact with observation tools.",
+    madness: 2,
+    paranoia: 3
+  },
+
+  wavered: {
+    response: ">> DIMENSIONAL SHIFT: Object outlines flickered. Subject’s vision unable to focus. Walls pulsed. No hallucination filters triggered.",
+    madness: 4,
+    paranoia: 2
+  },
+
+  quivered: {
+    response: ">> NERVOUS SIGNAL: Slight tremble in extremities. Not stress-induced. Subject whispered, 'It’s too close now.' No entities recorded.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  slammed: {
+    response: ">> FORCED IMPACT: Door shut with violent force. No wind. No persons in area. Pressure shift followed. Subject’s left ear bled briefly.",
+    madness: 3,
+    paranoia: 4
+  },
+
+  seeped: {
+    response: ">> INFILTRATION REPORT: Black moisture appeared along edges of observation window. No material origin. Refused chemical analysis. Subject unable to breathe properly during event.",
+    madness: 4,
+    paranoia: 4
+  },
+
+  blinked: {
+    response: ">> VISUAL INTERRUPTION: Subject blinked. Room changed. Nothing else moved. Subject described figures in peripheral vision that vanished with second blink.",
+    madness: 3,
+    paranoia: 3
+  },
+
+  scratched: {
+    response: ">> SURFACE MARKING: Scratches appeared in symmetrical patterns. Fresh. No tools present. Subject’s arms tingled in synchrony with markings forming.",
+    madness: 2,
+    paranoia: 4
+  },
+
+  twitched: {
+    response: ">> MUSCLE SPIKE: Involuntary twitches noted in fingers. Repeating at 11-second intervals. Subject said, ‘It’s trying to speak through me.’",
+    madness: 3,
+    paranoia: 3
+  },
+
+  snarled: {
+    response: ">> VOCAL AGGRESSION: Low animalistic growl from hallway. No animals registered. Subject claimed it knew their name.",
+    madness: 4,
+    paranoia: 4
+  },
+
+  etched: {
+    response: ">> SYMBOLS EMERGED: Writing appeared on fogged mirror. Etched from inside. Language unknown. Subject reported understanding anyway — and regretting it.",
+    madness: 4,
+    paranoia: 3
+  },
+
+  split: {
+    response: ">> FRACTURE FORMATION: Hairline crack ran up center of window. No impact. Crack shaped like an eye. Eye blinked once.",
+    madness: 3,
+    paranoia: 4
+  },
+
+
   flicker: {
     response: ">> VISUAL LOG: Lights faltered for 0.8 seconds. No wind interference. The system registered a presence interrupting the filament, thin, human-sized. It lingered just long enough to be noticed, then retreated into static.",
     madness: 2,
