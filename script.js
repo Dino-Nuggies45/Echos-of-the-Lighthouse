@@ -1,9 +1,17 @@
-let day = 1;
+const lighthouseScene = document.getElementById("lighthouseScene");
+const computerScene = document.getElementById("computerScene");
+const interfaceBox = document.getElementById("computerInterface");
+const screenText = document.getElementById("screenText");
+const submitBtn = document.getElementById("submitBtn");
+const userInput = document.getElementById("userInput");
+const typingSound = document.getElementById("typingSound");
+
 let madness = 0;
 let paranoia = 0;
+let day = 1;
 const usedKeywords = new Set();
-
-const typingSound = document.getElementById("typingSound");
+const diaryEntries = [];
+const glitchDays = [3, 7, 12];
 
 //the story will go here when I'm ready to write for another 25 hours :D KMS *insert choking meme*
 const keywords = {
@@ -1700,138 +1708,80 @@ const keywords = {
   },
 };
 
-const glitchDays = [3, 6, 10];
+lighthouseScene.addEventListener("click", () => {
+  lighthouseScene.classList.remove("active");
+  computerScene.classList.add("active");
+  interfaceBox.style.display = "block";
+});
 
-function submitLog() {
-    const input = document.getElementById("playerInput").ariaValueMax.toLowerCase();
-    const responseArea = document.getElementById("resposneArea");
+computerScene.addEventListener("click", () => {
+  lighthouseScene.classList.add("active");
+  computerScene.classList.remove("active");
+  interfaceBox.style.display = "none";
+});
 
-    if (!input.trim()) {
-        responseArea.textContent = "No log detected Entry incomplete...";
-        return;
+submitBtn.addEventListener("click", () => {
+  const input = userInput.value.trim().toLowerCase();
+  if (!input) return;
+
+  typingSound.currentTime = 0;
+  typingSound.play();
+
+  let matched = null;
+  for (let word in keywords) {
+    if (input.includes(word)) {
+      matched = word;
+      break;
     }
+  }
 
-
-    typingSound.currentTime = 0;
-    typingSound.play();
-
-    for(let key in keywords) {
-        if (input.includes(key)) {
-            const entry = keywords[key];
-            madness += entry.madness;
-            paranoia += entry.paranoia;
-            responseArea.textContent = `[SYSTEM REPLY]\n${entry.response}`;
-            matched = true;
-            break;
-        }
+  if (matched) {
+    if (usedKeywords.has(matched)) {
+      typeResponse(">> ENTRY REDUNDANT. No further insight. Repetition noted.");
+    } else {
+      const entry = keywords[matched];
+      usedKeywords.add(matched);
+      madness += entry.madness;
+      paranoia += entry.paranoia;
+      logEntry(matched, entry.response);
+      typeResponse(entry.response);
     }
-
-    if (!matched) {
-        if(glitchDays.includes(day)) {
-            responseArea.textContent = `[SYS--ERR::%%GL1TCH%%]\n....they hear you. \nstop writing\n`;
-            madness += 3
-            paranoia += 3
-        } else {
-            responseArea.textContent = `[SYSTEM REPLY]\nLog archived.No relevant data detected.`;
-            madness += 1;
-        }
+  } else {
+    if (glitchDays.includes(day)) {
+      madness += 2;
+      paranoia += 2;
+      typeResponse("[SYS-GLITCH::DATA LOOP]\nYou shouldn’t be writing this...\nThey are listening again.");
+    } else {
+      madness += 1;
+      typeResponse(">> ENTRY ACCEPTED. No anomalies detected. Awaiting next.");
     }
+  }
 
-    const diaryEntries = [];
+  updateStats();
+  userInput.value = "";
+  day++;
+  document.getElementById("dayDisplay").textContent = day;
+});
 
-    function logDiary(keyword, response) {
-        const entry = `"${keyword}" -- ${response}`;
-        diaryEntries.push(entry);
-        updateDiaryUI();
+function typeResponse(text) {
+  screenText.textContent = "";
+  let i = 0;
+  const interval = setInterval(() => {
+    if (i < text.length) {
+      screenText.textContent += text[i++];
+    } else {
+      clearInterval(interval);
     }
-
-    function updateDiaryUI() {
-        const diarySection = document.getElementById("diary");
-        const diaryContainer = document.getElementById("diaryEntries");
-        diarySection.classList.remove("hidden");
-
-        diaryContainer.innerHTML = diaryEntries
-        .map(entry => `<p>${entry}</p>`)
-        .join("");
-    }
-
-    function parseEntry(entryText) {
-        let matchedKeyword = null;
-
-        for (let word in keywords) {
-            const regex = RegExp(`\\b${word}\\b`, 'i');
-            if (regex.test(entryText)) {
-                matchedKeyword = word;
-                break;
-            }
-        }
-
-        if (matchedKeyword) {
-            if (usedKeywords.has(matchedKeyword)) {
-                handleDuplicateKeyword();
-            } else {
-                handleKeyword(matchedKeyword);
-            }
-        } else {
-            displayFallback();
-        }
-    }
-
-    function handleKeyword(word) {
-        const data = keywords[word];
-        madness += data.madness || 0;
-        paranoia += data.paranoia || 0;
-        usedKeywords.add(words);
-
-        logDiary(word, data.response);
-        displayResponse(data.response);
-
-        if (data.accelerates && madness + paranoia > 8) {
-            triggerAcceleratedEnding();
-        }
-    }
-
-    function handleDuplicateKeyword() {
-        const remaining = Object.keys(keywords).filter( k => !usedKeywords.has(k));
-
-        if (remaining.length > 0) {
-            displayResponse("You've already said that. What else have you observed?");
-        } else {
-            displayGlitch();
-        }
-    }
-
-    function displayGlitch() {
-        const glitches = [
-            "##%$** SYSTEM BREACH, REPEAT ENTRY DETECTED",
-            "voice.voice.voice.voice.",
-            "They warned you. We warned you.",
-            "----ERROR: LIGHTHOUSE CANNOT RESPOND----"
-        ];
-        const glitchText = glitches[Math.floor(Math.random() * glitches.length)];
-        displayResponse(glitchText)
-    }
-
-    function displayFallback() {
-        displayResponse("The system is quiet...oddly quiet.")
-    }
-
-    function displayResponse(text) {
-        const outputBox = document.getElementById("storyOutput");
-        outputBox.innerHTML = `<p>${text}</p>`;
-    }
-
-    updateStats();
-    nextDay();
+  }, 15);
 }
 
 function updateStats() {
-    document.getElementById("madness").textContent = madness;
-    document.getElementById("paranoia").textContent = paranoia;
+  document.getElementById("madness").textContent = madness;
+  document.getElementById("paranoia").textContent = paranoia;
 }
 
-function nextDay() {
-    day++
-    document.getElementById("dayDisplay").textContent = `Day ${day}`;
-    document.getElementById("playerInput").value = "";
+function logEntry(word, response) {
+  diaryEntries.push(`${word.toUpperCase()} -- ${response}`);
+  const diaryHTML = diaryEntries.map(line => `<p>${line}</p>`).join("");
+  document.getElementById("diaryEntries").innerHTML = diaryHTML;
 }

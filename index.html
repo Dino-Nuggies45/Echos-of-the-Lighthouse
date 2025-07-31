@@ -1,30 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content = "width=device-width, initial-scale-1.0"/>
-    <title>Echoes of the Lighthouse</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lighthouse Log</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div id="game">
-        <h1>Echoes of the Lighthouse</h1>
-        <div id="dayDisplay">Day 1</div>
-        <div id="logContainer">
-            <textarea id="playerInput" placeholder="What did you observe today?..."></textarea>
-            <button onclick="submitLog()">Submit Log</button>
-        </div>
-        <div id="responseArea"></div>
-        <div id="stats">
-            <p><strong>Madness:</strong> <span id="madness">0</span></p>
-            <p><strong>Paranoia:</strong> <span id="paranoia">0</span></p>
-        </div>
-        <section id="diary" class="hidden">
-            <h2>Lighthouse Log</h2>
-            <div id="diaryEntries"></div>
-        </section>
+
+  
+  <img src="lighthouse.jpg" alt="Lighthouse" id="lighthouseScene" class="scene-image active" />
+
+
+  <img src="computer.jpg" alt="Computer Screen" id="computerScene" class="scene-image" />
+
+ 
+  <div id="computerInterface">
+    <div id="stats">
+      Day <span id="dayDisplay">1</span> | Madness: <span id="madness">0</span> | Paranoia: <span id="paranoia">0</span>
     </div>
-    <audio id="typingSound" src="placeholder.mp3" preload="auto"></audio>
-    <script src="script.js"></script>
+    <div id="screenText"></div>
+    <textarea id="userInput" placeholder="Enter your daily report..."></textarea>
+    <button id="submitBtn">Send</button>
+    <div id="diary">
+      <h3>Log Diary</h3>
+      <div id="diaryEntries"></div>
+    </div>
+  </div>
+
+  <audio id="typingSound" src="typing.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
 </body>
 </html>
