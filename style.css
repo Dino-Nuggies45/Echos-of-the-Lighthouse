@@ -3,205 +3,150 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body, html {
-  width: 100%;
   height: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0b1220;
+  color: #e0e6f0;
   overflow: hidden;
-  color: #e0f7fa;
-}
-
-
-#game-container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
 #background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('Assets/images/lighthouse.jpeg') no-repeat center center/cover;
+  filter: brightness(0.75);
+  z-index: 1;
 }
 
 
-#dialogue-box {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 12, 24, 0.8);
-  padding: 20px;
-  border: 1px solid #00bcd4;
-  border-radius: 8px;
-  max-width: 80%;
-  z-index: 10;
-  animation: fadeIn 0.5s ease-in-out;
-}
+#computerHotspot {
+  position: fixed;
 
-#dialogue-text {
-  font-size: 1.1em;
-  color: #e0f7fa;
-  line-height: 1.4em;
-}
-
-
-#notification-bar {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #002f3d;
-  color: #ffffff;
-  padding: 10px 25px;
-  border-radius: 5px;
-  border: 1px solid #00bcd4;
-  font-weight: bold;
-  z-index: 12;
-  animation: slideDown 0.5s ease-in-out;
-}
-
-
-#computer {
-  position: absolute;
-  right: 6%;
-  bottom: 22%;
-  width: 90px;
+  top: 56%;   
+  left: 40%;  
+  width: 400px;  
+  height: 500px; 
+  transform: translate(-50%, -50%);
   cursor: pointer;
-  z-index: 5;
-  transition: transform 0.3s;
-}
-#computer:hover {
-  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0);
+  z-index: 9999;
+  
 }
 
 
-#terminal-screen {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 80%;
-  height: 70%;
-  background-color: rgba(5, 20, 25, 0.95);
-  padding: 20px;
-  border: 2px solid #00bcd4;
-  color: #00ffcc;
-  font-family: 'Courier New', Courier, monospace;
-  z-index: 15;
-  overflow-y: auto;
-}
-
-
-#terminal-text {
-  white-space: pre-wrap;
-  margin-bottom: 20px;
-}
-
-
-#log-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #00bcd4;
-  background-color: #002a2e;
-  color: #e0f7fa;
-  font-size: 1em;
-  margin-bottom: 10px;
-}
-
-#submit-log {
-  background-color: #007e7a;
-  color: #fff;
-  padding: 8px 15px;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-#submit-log:hover {
-  background-color: #00bcd4;
-}
-
-
-#journal-icon {
-  position: absolute;
+.dialog {
+  position: fixed;
   bottom: 20px;
-  right: 20px;
-  width: 60px;
-  cursor: pointer;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 700px;
+  width: 90%;
+  background: rgba(15, 25, 40, 0.85);
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  box-shadow: 0 0 10px #222a3b;
   z-index: 10;
+  transition: opacity 0.5s ease;
 }
 
 
-#journal-modal {
-  position: absolute;
-  bottom: 10%;
+.notification {
+  position: fixed;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60%;
-  max-height: 60%;
-  background-color: rgba(8, 24, 32, 0.95);
-  border: 2px solid #00bcd4;
-  padding: 20px;
-  color: #e0f7fa;
+  max-width: 600px;
+  width: 90%;
+  background: #16325cdd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 0 8px #112948;
+  color: #b9d0ff;
   z-index: 20;
+  transition: opacity 0.5s ease;
+}
+
+#computerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;      
+  height: 100vh;     
+  background: #091423;
+  z-index: 9998;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+  overflow: hidden;
+}
+
+
+#computerContainer.zoomed {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+#computerScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;      
+  height: 100vh;     
+  object-fit: cover; 
+  user-select: none;
+}
+
+
+.computer-text {
+  position: absolute;
+  top: 15%;
+  left: 29%;
+  right: 10%;
+  bottom: auto;
+  color: #a4ff90;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  user-select: text;
+  pointer-events: none;
+  max-height: 70vh;
   overflow-y: auto;
 }
 
-#journal-modal h2 {
-  margin-bottom: 10px;
+#tutorialBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 12px 24px;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  display: none;
+  z-index: 10000;
 }
 
-#close-journal {
-  margin-top: 10px;
-  background-color: #007e7a;
-  border: none;
-  color: white;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
-#close-journal:hover {
-  background-color: #00bcd4;
-}
-
-
-#sleep-controls {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 50px;
-  z-index: 10;
-}
-
-.arrow {
-  font-size: 2.5rem;
-  cursor: pointer;
-  color: #00bcd4;
-  transition: transform 0.3s;
-}
-
-.arrow:hover {
-  transform: scale(1.3);
-}
 
 
 .hidden {
-  display: none !important;
+  opacity: 0;
+  pointer-events: none;
 }
 
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes slideDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+.visible {
+  opacity: 1;
+  pointer-events: auto;
 }
