@@ -6,25 +6,53 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="lighthouse-screen">
-    <img id="lighthouse-bg" src="lighthouse.jpeg" alt="Lighthouse View">
-    <video id="anomaly-visual" src="day1_anomaly.mp4" autoplay muted></video>
-    <button id="zoom-to-computer">Access Terminal</button>
-  </div>
+ 
+  <div id="game-container">
+    <img id="background" src="Assets/images/lighthouse.jpeg" alt="Lighthouse background">
 
-  <div id="computer-screen">
-    <img id="computer-bg" src="computer.png" alt="Computer">
-    <div id="typing-container">
-      <div id="prompt">>> What did you observe today?</div>
-      <textarea id="player-input" placeholder="Type your log here..."></textarea>
-      <button id="submit-input">Submit</button>
+   
+    <div id="dialogue-box" class="hidden">
+      <p id="dialogue-text"></p>
     </div>
-    <div id="system-response"></div>
-    <button id="end-day" style="display:none;">End Day</button>
-    <button id="exit-terminal">Exit Terminal</button>
+
+    
+    <div id="notification-bar" class="hidden"></div>
+
+   
+    <img id="computer" src="Assets/images/computer.png" alt="Computer">
+
+   
+    <div id="terminal-screen" class="hidden">
+      <div id="terminal-text"></div>
+      <input type="text" id="log-input" placeholder=">> What did you observe today?" class="hidden">
+      <button id="submit-log" class="hidden">Submit Log</button>
+    </div>
+
+    
+    <img id="journal-icon" src="Assets/images/journal_icon.png" alt="Journal" title="Open Journal">
+
+    
+    <div id="journal-modal" class="hidden">
+      <h2>Logbook</h2>
+      <div id="journal-entries"></div>
+      <button id="close-journal">Close</button>
+    </div>
+
+    
+    <div id="sleep-controls" class="hidden">
+      <div class="arrow" id="sleep-left">⬇</div>
+      <div class="arrow" id="sleep-right">⬇</div>
+    </div>
   </div>
 
+ 
+  <audio id="ping-sound" src="Assets/audio/ping.mp3"></audio>
+  <audio id="glitch-sound" src="Assets/audio/static_glitch.mp3"></audio>
 
+  
+  <script src="Components/dialogueBox.js"></script>
+  <script src="Components/journal.js"></script>
+  <script src="Components/saveSystem.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
