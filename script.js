@@ -10,7 +10,7 @@ const computerContainer = document.getElementById('computerContainer');
 const computerText = document.getElementById('computerText');
 const computerHotspot = document.getElementById('computerHotspot');
 const background = document.getElementById('background');
-
+let canExitComputer = false;
 
 const pingSound = new Audio(pingSoundSrc);
 
@@ -181,3 +181,74 @@ window.onload = () => {
     console.log("Phase 1 complete.");
   });
 };
+
+let currentDay = 1;
+
+function startNextDay(dayNum) {
+  const overlay = document.getElementById("fadeOverlay");
+  const dayCounter = document.getElementById("dayCounter");
+
+  overlay.style.display = "block";
+  overlay.style.opacity = "0";
+
+  let fadeIn = setInterval(() => {
+    let val = parseFloat(overlay.style.opacity);
+    if (val >= 1) {
+      clearInterval(fadeIn);
+      dayCounter.textContent = `Day: ${dayNum}`;
+      dayCounter.style.display = "block";
+
+      setTimeout(() => {
+        dayCounter.style.display = "none";
+        fadeOutOverlay(() => beginLighthouseMorning(dayNum));
+      }, 2500);
+    } else {
+      overlay.style.opacity = (val + 0.05).toString();
+    }
+  }, 50);
+}
+
+function fadeOutOverlay(callback) {
+  const overlay = document.getElementById("fadeOverlay");
+
+  let fadeOut = setInterval(() => {
+    let val = parseFloat(overlay.style.opacity);
+    if (val <= 0) {
+      clearInterval(fadeOut);
+      overlay.style.display = "none";
+      if (callback) callback();
+    } else {
+      overlay.style.opacity = (val - 0.05).toString();
+    }
+  }, 50);
+}
+
+function beginLighthouseMorning(dayNum) {
+  currentDay = dayNum;
+  showDialog(
+    "You walk into the main lighthouse room. You could’ve sworn that you slept, but for some reason it was still night. You spot a small diary on the desk by the computer."
+  ).then(() => {
+    document.getElementById("logbookBtn").classList.remove("hidden");
+    showTutorial("This is your diary. It will store all entries and their responses to help you with your journey.");
+
+    setTimeout(() => {
+      playAnomaly();
+    }, 4000);
+  });
+}
+
+function playAnomaly() {
+ 
+  console.log("Anomaly triggered");
+
+  setTimeout(() => {
+    showDialog("What the hell was that?! I have to report that!").then(() => {
+      showTutorial("After you see an anomaly, report it to the system here. Press 'enter' to submit.");
+      enableTypingInput(); 
+    });
+  }, 3000);
+}
+
+function openDiary() {
+  alert("Diary system coming soon."); 
+}
