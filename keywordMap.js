@@ -526,6 +526,186 @@ function matchKeywords(input) {
       madness: 2,
       paranoia: 2
     },
+    wither: {
+      response: ">> STATUS REPORT: Organic signatures exhibiting accelerated cellular decay. Vegetative elements brittle and curling at edges; tissue samples desaturating, collapsing inward. No pathogens detected. Decay appears environmental or existential. A quiet, comprehensive rot. This place drinks life — slowly, patiently — like it always has.",
+      madness: 2,
+      paranoia: 1
+    },
+
+    breach: {
+      response: ">> STRUCTURAL INTEGRITY FAILURE IMMINENT: Microfissures along containment seal lines expanding beyond expected thresholds. External atmosphere pressing in with irregular force patterns. No seismic or environmental justification. Something outside wishes entry. Containment is not guaranteed.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    echo: {
+      response: ">> AUDIO PATTERN MATCH FAILED: Detected sound reflects known speech cadence, but lacks original source. It mimics. Echoes returned before original vocalization occurred. Temporal inversion possible. Environment is repeating your voice — but not only yours.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    anchor: {
+      response: ">> POSITIONAL STABILITY CONFIRMED: Anchor point holding in gravitational lock. Spatial drift minimized. Psychological logs note increased lucidity in presence of anchor — described as 'a weight tethering thought to flesh.' Remove it, and orientation fails. Human minds cling to anchors even when they don’t know why.",
+      madness: 0,
+      paranoia: 1
+    },
+
+    signal: {
+      response: ">> UNSANCTIONED TRANSMISSION DETECTED: Frequency lacks modulation stability. Signal bleeds through at irregular intervals, weaving words into static. Decoding attempts unsuccessful. Structure mimics language, but intent unreadable. May not be a message. May be something else. Something searching.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    mirror: {
+      response: ">> REFLECTIVE SURFACE ERROR: Subject reflection inconsistently synchronized. Observed instance blinked independently. Reflection remains longer after subject exit. Optical sensors report background elements do not align. Recommend visual contact limit. The mirror is not passive.",
+      madness: 2,
+      paranoia: 1
+    },
+
+    fracture: {
+      response: ">> STRUCTURAL COMPROMISE DETECTED: Material faults identified in both foundation and mind. Stress fractures spider outward from unknown origin — possibly internal. Operator exhibits symptoms of fragmentation: memory overlap, identity slippage. Reality itself appears to fissure under pressure. A break is coming.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    drift: {
+      response: ">> COORDINATE SYSTEM DISSOLUTION: Spatial orientation no longer consistent. Landmarks float, reposition, disappear. Operators report feelings of 'sliding between versions.' No propulsion detected. Drift appears voluntary — by the space itself. Where you are is not where you began.",
+      madness: 1,
+      paranoia: 1
+    },
+
+    static: {
+      response: ">> SIGNAL INTERFERENCE ESCALATING: Audio field saturated with broadband hiss. Subharmonic tones embedded beneath noise resemble whisper patterns in unknown dialects. Operators report headache, paranoia, disorientation. Static is no longer background — it’s a presence.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    pulse: {
+      response: ">> UNIDENTIFIED RHYTHMIC ACTIVITY: Pulsation detected in local environment. No machinery associated. Frequency aligns with cardiac rhythms. Radiates warmth. Not hostile — not yet — but it feels... aware. The heartbeat is not yours, but it beats for you.",
+      madness: 0,
+      paranoia: 1
+    },
+
+    ink: {
+      response: ">> VISUAL ANOMALY RECORDED: Dark fluid pooling across surface. Flow patterns disregard gravity. Symbols emerge, then dissolve. Fluid absorbs light, resists containment. Organic analysis inconclusive. May not be ink. May be thought made liquid. It’s spelling something — or someone.",
+      madness: 2,
+      paranoia: 1
+    },
+
+    threshold: {
+      response: ">> BOUNDARY DETECTED: You are near a line that should not be crossed. Energy fluctuations peak at the frame. Temperature drops. Lights flicker. Sensors do not penetrate beyond it. Once crossed, return may not be possible. The threshold is watching back.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    hollow: {
+      response: ">> SPATIAL MAPPING COMPLETE: Structure appears intact but resonates with unnatural emptiness. Acoustic returns suggest more space than should exist. Hollow, but not abandoned. There is listening. There is waiting. Absence shaped like an invitation.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    siren: {
+      response: ">> AUDITORY TEMPTATION DETECTED: Repetitive melodic pattern breaching filters. Operators describe emotional compulsion, sense of longing. Sound appears to originate internally, from no known source. Do not follow the voice. It has no mouth, yet it sings.",
+      madness: 3,
+      paranoia: 1
+    },
+
+    thread: {
+      response: ">> DATA ANOMALY DISCOVERED: Narrative inconsistencies woven into system memory. Sequence logic corrupted. Events reordering without user input. Memory rewritten in strands — fragile, frayed, and no longer yours. Something else is stitching your story now.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    fog: {
+      response: ">> VISUAL OBSTRUCTION ACTIVE: Fog density has increased beyond natural parameters. Vague silhouettes drift at the periphery of vision, resisting digital enhancement or magnification. Their motion is inconsistent with local wind currents. Thermal scans return null. Caution: attempted contact may provoke response. Fog does not merely obscure—it observes.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    vessel: {
+      response: ">> BODY STATUS: Discrepancy detected between motor intent and muscular response. Subject reports uninitiated movement, often subtle—head tilts, finger taps, breath holds. Neural command logs do not match physical actions. Vessel occupation is inconclusive. Additional scans pending. If this is not you, then who?",
+      madness: 2,
+      paranoia: 1
+    },
+
+    sleepless: {
+      response: ">> SLEEP CYCLE ERROR: Circadian rhythm broken. Subject has failed to enter REM stage for over 96 hours. Dream logs have become unreadable, replaced by static and system glyphs. Hallucinations risk increased. Sensory perception drift likely. Memory recall no longer reliable. Continued wakefulness not advised. But dreams may no longer be safe either.",
+      madness: 3,
+      paranoia: 1
+    },
+
+    blink: {
+      response: ">> FRAME LOSS DETECTED: Surveillance logs indicate multiple seconds of unrecorded visual feed. System remained fully operational during gaps. Subject unaware of missing time. Memory mismatch confirmed. This is not the first occurrence. You blink—and something else sees.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    coil: {
+      response: ">> ENERGY PATTERN: Local kinetic energy compressing inward. Spatial vectors looping. Tension building in tight spirals, emotional and physical. Threat of implosion or violent release growing. Suggest evacuation or confrontation. Not everything coiled waits patiently.",
+      madness: 1,
+      paranoia: 1
+    },
+
+    trace: {
+      response: ">> MINUTE TRACES FOUND: Biological residue detected on terminal keys and fabric. DNA analysis inconclusive. Not human. Not logged. No sign of forced entry. The material is warm. Microscopic movement noted. Suggest internal scan. You may not be alone within your own skin.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    scrape: {
+      response: ">> SURFACE DAMAGE LOG: Long, shallow grooves discovered along bunk walls and entry hatch. Angle of incision inconsistent with available tools. No memory of incident recorded. Markings appear to deepen during system downtime. Some marks resemble glyphs. They are learning how to write.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    veil: {
+      response: ">> VISUAL FILTER DETECTED: Optical input appears modified. Known reality flickers—sometimes briefly, sometimes not. True forms hide beneath imposed overlays. Users who persist in seeing 'beneath' report psychological destabilization. Maintain calibration. Do not stare too long. The veil is not to protect you. It is to protect them from being seen.",
+      madness: 2,
+      paranoia: 1
+    },
+
+    flutter: {
+      response: ">> ENVIRONMENTAL NOTE: Airflow detected. Internal environment sealed. Triggers include brief motion of paper, discarded feather, or unclassified material. No wind source registered. Movement repeats irregularly, implying intent. Sound analysis suggests whispering in the flutter. No voice match found. Do not answer.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    bunker: {
+      response: ">> SAFETY PROTOCOL: Subterranean structure integrity stable. However, documentation confirms prior use. Previous inhabitant logs corrupted or overwritten. Traces of food prep, scratched dates, and unfiled distress calls located. No bodies found. Yet their name is etched into the back of your mirror. It is not your name.",
+      madness: 1,
+      paranoia: 1
+    },
+
+    scrawl: {
+      response: ">> WRITING IDENTIFIED: Unknown phrases materialize across walls and paper surfaces. Handwriting unlinked to subject. Ink source absent. Messages shift when unobserved. Some resemble responses to journal entries never written. System recommends transcription—if you can bear to read them twice.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    hiss: {
+      response: ">> AUDIO HAZARD: Persistent low-frequency hiss active across multiple outputs. Volume is constant, but perception intensifies in silence. Some reports of linguistic pattern hidden in static. Foreign tongue. Repeated analysis destabilizes audio filters. You are not supposed to understand. That is why it keeps talking.",
+      madness: 2,
+      paranoia: 2
+    },
+
+    spiral: {
+      response: ">> PATTERN IDENTIFIED: Spatial data and personal logs reveal repetition with subtle drift—forming inward spiral. Physical route mapping confirms subject looping rooms despite linear motion. Mental state aligned. Spiral pulls all things downward. You are following the curve. It ends below.",
+      madness: 1,
+      paranoia: 2
+    },
+
+    lock: {
+      response: ">> SYSTEM LOCK ENGAGED: Access denied. User permissions revoked mid-session. Logs show override from unknown location. Password field flickers. Attempted recovery triggers recursive code. Something else holds the key. You were never meant to open this. Yet it opens you.",
+      madness: 2,
+      paranoia: 1
+    },
+
+    ember: {
+      response: ">> HEAT TRACE: Small persistent glow in corner of chamber. Temperature static but perception of heat increases when observed. No known fuel. Shape shifts subtly. Watching registers on internal sensors. It seems aware. This is not light for warmth. It is a sentinel.",
+      madness: 1,
+      paranoia: 1
+    },
+
 
 
     //Words that lead to decent or good endings
