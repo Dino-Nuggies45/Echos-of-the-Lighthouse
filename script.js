@@ -14,11 +14,15 @@ const pingSound = new Audio(pingSoundSrc);
 
 function showElement(el) {
   el.classList.remove('hidden');
+  el.style.display = ''; 
   setTimeout(() => el.style.opacity = '1', 10);
 }
 function hideElement(el) {
   el.style.opacity = '0';
-  setTimeout(() => el.classList.add('hidden'), 500);
+  setTimeout(() => {
+    el.classList.add('hidden');
+    el.style.display = 'none'; 
+  }, 500);
 }
 
 async function phaseOne() {
@@ -31,19 +35,21 @@ async function phaseOne() {
   await showDialog("Huh? I should probably check that...");
   showNotification("Click on the computer to access it");
 
-  computerHotspot.classList.add('visible');
+  computerHotspot.classList.add('visible'); 
 
   return new Promise((resolve) => {
     computerHotspot.onclick = () => {
       hideNotification();
-      computerHotspot.classList.remove('visible');
+      computerHotspot.classList.remove('visible'); 
 
+  
       background.style.transition = 'opacity 1s ease';
       background.style.opacity = '0';
 
       computerContainer.classList.remove('hidden');
       computerContainer.classList.add('zoomed');
 
+  
       setTimeout(() => {
         background.style.display = 'none';
       }, 1000);
@@ -64,6 +70,7 @@ Good luck.`).then(() => {
     };
   });
 }
+
 
 function showDialog(text) {
   return new Promise((resolve) => {
@@ -146,22 +153,23 @@ function hideComputer() {
   showTutorial('');
 }
 
-window.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' && canExitComputer) {
-    hideComputer();
-    canExitComputer = false;
-  }
-});
+function continueDayOne() {
+  console.log("continueDayOne triggered");
+  hideElement(dialogBox);
+  showDialog("I closed the computer and sat back, trying to take it all in. This job wasn’t what I expected.")
+    .then(() => showDialog("Still, something about this place pulls me in. I guess I’ll start fresh tomorrow."))
+    .then(() => {
+      showTutorial("Day 1 complete. Click anywhere to rest...");
+      document.body.addEventListener("click", handleDayOneComplete, { once: true });
+    });
+}
 
-window.onload = () => {
-  computerContainer.style.pointerEvents = 'auto';
-  computerContainer.classList.remove('zoomed');
-  phaseOne().then(() => {
-    console.log("Phase 1 complete.");
-  });
-};
-
-let currentDay = 1;
+function handleDayOneComplete() {
+  console.log("handleDayOneComplete triggered");
+  hideElement(dialogBox);
+  showTutorial("");
+  startNextDay(2); 
+}
 
 function startNextDay(dayNum) {
   const overlay = document.getElementById("fadeOverlay");
@@ -204,16 +212,30 @@ function fadeOutOverlay(callback) {
 
 function beginLighthouseMorning(dayNum) {
   currentDay = dayNum;
-  showDialog(
-    "You walk into the main lighthouse room. You could’ve sworn that you slept, but for some reason it was still night. You spot a small diary on the desk by the computer."
-  ).then(() => {
-    document.getElementById("logbookBtn").classList.remove("hidden");
-    showTutorial("This is your diary. It will store all entries and their responses to help you with your journey.");
 
-    setTimeout(() => {
-      playAnomaly();
-    }, 4000);
-  });
+  if (dayNum === 1) {
+    showDialog(
+      "You walk into the main lighthouse room. You could’ve sworn you slept, but it’s still night. A strange unease lingers. On the desk by the computer, you notice a small leatherbound book."
+    ).then(() => {
+      document.getElementById("logbookBtn").classList.remove("hidden");
+      showTutorial("This is your logbook. It will store all entries and responses to help you keep track.");
+
+      setTimeout(() => {
+        playAnomaly();
+      }, 4000);
+    });
+  } else if (dayNum === 2) {
+    showDialog(
+      "You wake up drenched in sweat. The fog is thick, thicker than you’ve ever seen. The dock outside is barely visible. The boat, it's gone. Or maybe moved. It's hard to say."
+    ).then(() => {
+      showDialog(
+        "The system pings. Another log must be written. But your thoughts are clouded, just like the sea."
+      ).then(() => {
+        showTutorial("Use the terminal to report what you observe.");
+        document.getElementById("logbookBtn").classList.remove("hidden");
+      });
+    });
+  }
 }
 
 function playAnomaly() {
@@ -229,3 +251,41 @@ function playAnomaly() {
 function openDiary() {
   alert("Diary system coming soon.");
 }
+
+function clearDialogQueue() {
+  if (window.dialogBoxTimeout) clearTimeout(window.dialogBoxTimeout);
+}
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && canExitComputer) {
+    console.log("Enter pressed and canExitComputer true");
+    hideComputer();
+    canExitComputer = false;
+    clearDialogQueue();
+    continueDayOne();
+  }
+});
+
+window.onload = () => {
+  computerContainer.style.pointerEvents = 'auto';
+  computerContainer.classList.remove('zoomed');
+
+  phaseOne().then(() => {
+    console.log("Phase 1 complete.");
+  });
+};
+
+window.onload = () => {
+  const computerHotspot = document.getElementById('computerHotspot');
+  computerHotspot.classList.remove('hidden');
+  computerHotspot.classList.add('visible');
+  computerHotspot.style.background = 'rgba(255, 0, 0, 0.2)';  
+  computerHotspot.style.cursor = 'pointer';
+
+  computerHotspot.onclick = () => {
+    alert("Hotspot clicked!");
+  }
+};
+
+
+let currentDay = 1;
